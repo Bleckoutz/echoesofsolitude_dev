@@ -1,0 +1,501 @@
+fileFormatVersion: 2
+guid: 11c837e10b51e8e4a89c5d4253898fe6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Group 4 - 1_1-Sheet-export_28
+      rect:
+        serializedVersion: 2
+        x: 3228
+        y: 8
+        width: 245
+        height: 472
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eec6ae875560b5e4e99a042afd76b0fd
+      internalID: -1955477126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Group 4 - 1_1-Sheet-export_36
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 8
+        width: 237
+        height: 472
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18324a06aa3868c42a9f834af41beaa6
+      internalID: -1857326006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Group 4 - 1_1-Sheet-export_37
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 8
+        width: 245
+        height: 472
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c440ee941ad53846bd688d1afc7d7fe
+      internalID: -125269109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Group 4 - 1_1-Sheet-export_38
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 8
+        width: 237
+        height: 472
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76f8d8a0479bf374db437c0430eb27a2
+      internalID: 1028281509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Group 4 - 1_1-Sheet-export_40
+      rect:
+        serializedVersion: 2
+        x: 1957
+        y: 8
+        width: 236
+        height: 472
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e07c93e68fcaf0a4aa57d16312514fab
+      internalID: 106004109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Group 4 - 1_1-Sheet-export_41
+      rect:
+        serializedVersion: 2
+        x: 2267
+        y: 8
+        width: 245
+        height: 472
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39bea1103988b3b47a3e0c3b687943d0
+      internalID: -1162044399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Group 4 - 1_1-Sheet-export_42
+      rect:
+        serializedVersion: 2
+        x: 2587
+        y: 8
+        width: 246
+        height: 472
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6150d19f9fc77524eafbe20e53be706a
+      internalID: -1580294620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Group 4 - 1_1-Sheet-export_43
+      rect:
+        serializedVersion: 2
+        x: 3558
+        y: 8
+        width: 234
+        height: 472
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b8ab4136c9559744876d947924c8108
+      internalID: -1921286816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Group 4 - 1_1-Sheet-export_45
+      rect:
+        serializedVersion: 2
+        x: 3887
+        y: 8
+        width: 227
+        height: 472
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 386d84e9af56545468959f0728e364cc
+      internalID: 924184113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Group 4 - 1_1-Sheet-export_49
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 8
+        width: 223
+        height: 459
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ab61d980d41164babd5f4d71a2a161
+      internalID: 534087824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Group 4 - 1_1-Sheet-export_50
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 8
+        width: 233
+        height: 472
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 130ee5d836ed74c4eb40584fe1efef4d
+      internalID: -570889914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Group 4 - 1_1-Sheet-export_51
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 8
+        width: 228
+        height: 472
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1860d46d611a56042b7565771f8877c2
+      internalID: 945289464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Group 4 - 1_1-Sheet-export_52
+      rect:
+        serializedVersion: 2
+        x: 2907
+        y: 8
+        width: 246
+        height: 472
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0ffebffb4ad1a14882b1b7ee15a8167
+      internalID: -374121774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Group 4 - 1_1-Sheet-export_53
+      rect:
+        serializedVersion: 2
+        x: 4208
+        y: 8
+        width: 225
+        height: 472
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da69ae6ac404d747b07f5529dd0431f
+      internalID: 1803544128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Group 4 - 1_1-Sheet-export_0: 867725438
+      Group 4 - 1_1-Sheet-export_1: 1709724536
+      Group 4 - 1_1-Sheet-export_10: 819760097
+      Group 4 - 1_1-Sheet-export_11: 1361417811
+      Group 4 - 1_1-Sheet-export_12: -1330804849
+      Group 4 - 1_1-Sheet-export_13: -1134115364
+      Group 4 - 1_1-Sheet-export_14: -466229543
+      Group 4 - 1_1-Sheet-export_15: 1918336200
+      Group 4 - 1_1-Sheet-export_16: -1269099518
+      Group 4 - 1_1-Sheet-export_17: 1115553791
+      Group 4 - 1_1-Sheet-export_18: 857616365
+      Group 4 - 1_1-Sheet-export_19: -1603660723
+      Group 4 - 1_1-Sheet-export_2: 1760550007
+      Group 4 - 1_1-Sheet-export_20: -1773923270
+      Group 4 - 1_1-Sheet-export_21: 506708335
+      Group 4 - 1_1-Sheet-export_22: 57146345
+      Group 4 - 1_1-Sheet-export_23: -1511938929
+      Group 4 - 1_1-Sheet-export_24: -813375746
+      Group 4 - 1_1-Sheet-export_25: 875906925
+      Group 4 - 1_1-Sheet-export_26: 68966365
+      Group 4 - 1_1-Sheet-export_27: -238947282
+      Group 4 - 1_1-Sheet-export_28: -1955477126
+      Group 4 - 1_1-Sheet-export_29: -1300691982
+      Group 4 - 1_1-Sheet-export_3: 869998112
+      Group 4 - 1_1-Sheet-export_30: 490064294
+      Group 4 - 1_1-Sheet-export_31: 856063735
+      Group 4 - 1_1-Sheet-export_32: -773927242
+      Group 4 - 1_1-Sheet-export_33: -1722838026
+      Group 4 - 1_1-Sheet-export_34: -111892380
+      Group 4 - 1_1-Sheet-export_35: 1769100589
+      Group 4 - 1_1-Sheet-export_36: -1857326006
+      Group 4 - 1_1-Sheet-export_37: -125269109
+      Group 4 - 1_1-Sheet-export_38: 1028281509
+      Group 4 - 1_1-Sheet-export_39: 1033960294
+      Group 4 - 1_1-Sheet-export_4: -1461825590
+      Group 4 - 1_1-Sheet-export_40: 106004109
+      Group 4 - 1_1-Sheet-export_41: -1162044399
+      Group 4 - 1_1-Sheet-export_42: -1580294620
+      Group 4 - 1_1-Sheet-export_43: -1921286816
+      Group 4 - 1_1-Sheet-export_44: -1425127340
+      Group 4 - 1_1-Sheet-export_45: 924184113
+      Group 4 - 1_1-Sheet-export_46: 1907427047
+      Group 4 - 1_1-Sheet-export_47: -46872239
+      Group 4 - 1_1-Sheet-export_48: 378869693
+      Group 4 - 1_1-Sheet-export_49: 534087824
+      Group 4 - 1_1-Sheet-export_5: 2011976155
+      Group 4 - 1_1-Sheet-export_50: -570889914
+      Group 4 - 1_1-Sheet-export_51: 945289464
+      Group 4 - 1_1-Sheet-export_52: -374121774
+      Group 4 - 1_1-Sheet-export_53: 1803544128
+      Group 4 - 1_1-Sheet-export_6: 1871268851
+      Group 4 - 1_1-Sheet-export_7: 954213043
+      Group 4 - 1_1-Sheet-export_8: 302903176
+      Group 4 - 1_1-Sheet-export_9: 741338896
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

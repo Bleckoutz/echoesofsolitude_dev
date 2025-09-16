@@ -29,7 +29,7 @@ public class InimigoAI : MonoBehaviour
     private void Update()
     {
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-        isFollowingPlayer = distanceToPlayer <= detectionRange;
+        
 
         if (isFollowingPlayer)
         {

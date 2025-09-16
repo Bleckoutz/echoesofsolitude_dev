@@ -13,8 +13,12 @@ public class PlayerInfection : MonoBehaviour
     public float normalSpeed = 5f;
     public float minSpeed = 1f;
 
+    [Header("Pulo")]
+    public float normalJumpForce = 10f;
+    public float minJumpForce = 3f;
+
     [Header("Visão (escurecimento)")]
-    public SpriteRenderer visionMask;
+    public Transform visionMask; // pode ser um Sprite ou um objeto com Light
     public float normalVision = 1f;
     public float minVision = 0.3f;
 
@@ -22,6 +26,10 @@ public class PlayerInfection : MonoBehaviour
     {
         if (player == null)
             player = GetComponent<PlayerController>();
+
+        // Valores iniciais do Player
+        normalSpeed = player.moveSpeed;
+        normalJumpForce = player.jumpForce;
     }
 
     void Update()
@@ -34,33 +42,42 @@ public class PlayerInfection : MonoBehaviour
         // Reduz a velocidade do PlayerController
         player.moveSpeed = Mathf.Lerp(normalSpeed, minSpeed, progress);
 
-        // Reduz visão (se você tiver um efeito gráfico)
+        // Reduz o pulo do PlayerController
+        player.jumpForce = Mathf.Lerp(normalJumpForce, minJumpForce, progress);
+
+        // Reduz visão
         if (visionMask != null)
         {
             float visionScale = Mathf.Lerp(normalVision, minVision, progress);
-            visionMask.transform.localScale = Vector3.one * visionScale;
+            visionMask.localScale = Vector3.one * visionScale;
         }
 
         // Quando o tempo acaba → perde consciência
         if (infectionTimer >= infectionDuration)
-            PerdeConsciencia();
+            PerderConsciencia();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Rato") && !isInfected)
         {
-            isInfected = true;
-            infectionTimer = 0f;
-            Debug.Log("Player foi infectado!");
+            Infectar();
         }
     }
 
-    void PerdeConsciencia()
+    void Infectar()
     {
-        Debug.Log("O player perdeu a consciência!");
+        isInfected = true;
+        infectionTimer = 0f;
+        Debug.Log("⚠️ Player foi infectado!");
+        // Aqui você pode colocar animação, som, partículas etc
+    }
+
+    void PerderConsciencia()
+    {
+        Debug.Log("💀 O player perdeu a consciência!");
         player.moveSpeed = 0f;
-        // Aqui você pode chamar o GameOver do PlayerController, por exemplo:
+        player.jumpForce = 0f;
         player.PerderVida(); // ou direto player.GameOver();
     }
 }

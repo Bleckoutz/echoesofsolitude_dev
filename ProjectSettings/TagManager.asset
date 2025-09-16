@@ -8,6 +8,7 @@ TagManager:
   - Inimigo
   - TextoContador
   - MesaLaboratorio
+  - Rato
   layers:
   - Default
   - TransparentFX

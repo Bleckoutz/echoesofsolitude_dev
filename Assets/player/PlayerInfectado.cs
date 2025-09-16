@@ -21,11 +21,16 @@ public class PlayerInfection : MonoBehaviour
     public Transform visionMask; // pode ser um Sprite ou um objeto com Light
     public float normalVision = 1f;
     public float minVision = 0.3f;
+    public GameObject escuridão;
+    public GameObject luzdomundo;
+
 
     void Start()
     {
         if (player == null)
             player = GetComponent<PlayerController>();
+        if (escuridão!= null) escuridão.SetActive(false);
+        if (luzdomundo != null) escuridão.SetActive(true);
 
         // Valores iniciais do Player
         normalSpeed = player.moveSpeed;
@@ -49,10 +54,10 @@ public class PlayerInfection : MonoBehaviour
         if (visionMask != null)
         {
             float visionScale = Mathf.Lerp(normalVision, minVision, progress);
-            visionMask.localScale = Vector3.one * visionScale;
+            visionMask.localScale = Vector2.one * visionScale;
         }
 
-        // Quando o tempo acaba → perde consciência
+        // Quando o tempo acaba  perde consciência
         if (infectionTimer >= infectionDuration)
             PerderConsciencia();
     }
@@ -67,10 +72,12 @@ public class PlayerInfection : MonoBehaviour
 
     void Infectar()
     {
+        if (escuridão != null) escuridão.SetActive(true);
+        if (luzdomundo != null) luzdomundo.SetActive(false);
         isInfected = true;
         infectionTimer = 0f;
         Debug.Log("⚠️ Player foi infectado!");
-        // Aqui você pode colocar animação, som, partículas etc
+        
     }
 
     void PerderConsciencia()

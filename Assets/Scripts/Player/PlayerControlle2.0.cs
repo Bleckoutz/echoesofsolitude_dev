@@ -1,7 +1,9 @@
-﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayerController : MonoBehaviour
+public class PlayerControlle2 : MonoBehaviour
 {
     [Header("Movimento")]
     public float moveSpeed = 5f;
@@ -19,26 +21,22 @@ public class PlayerController : MonoBehaviour
     public BarraDeVidaCoracoes barraDeVidaUI;
     public ContadorMoedas contadorMoedasUI;
 
-    [Header("Bastão")]
-    public GameObject bastao;
-    public Transform mao;
-    private bool estaSegurandoBastao = false;
-    public GameObject bastaoVoadorPrefab;
-
     [Header("UI")]
     public GameObject gameOverPanel;
+    
+    [Header("Audio")]
+    public AudioSource musicaDeFundo;
 
     [Header("Painel de Puzzle")]
     public GameObject painelLaboratorio;
 
-    [Header("Audio")]
-    public AudioSource musicaDeFundo; // Música de fundo que será pausada
-
     private bool pertoDoVendedor = false;
     private bool pertoDaMesa = false;
 
+    // Start is called before the first frame update
     private void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
 
@@ -49,15 +47,13 @@ public class PlayerController : MonoBehaviour
         contadorMoedasUI?.AtualizarMoedas(moedas);
     }
 
+    // Update is called once per frame
     private void Update()
     {
         moveX = Input.GetAxisRaw("Horizontal");
 
         if (isGrounded && Input.GetButtonDown("Jump"))
             Jump();
-
-        if (Input.GetKeyDown(KeyCode.Q))
-            Atacar();
 
         if (pertoDoVendedor && Input.GetKeyDown(KeyCode.E))
             ComprarVida();
@@ -68,7 +64,6 @@ public class PlayerController : MonoBehaviour
         if (animator != null)
             animator.SetBool("IsRunning", moveX != 0);
     }
-
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(moveX * moveSpeed, rb.velocity.y);
@@ -81,36 +76,6 @@ public class PlayerController : MonoBehaviour
     {
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
     }
-
-    void Atacar()
-    {
-        if (!estaSegurandoBastao) return;
-
-        Destroy(bastao);
-        estaSegurandoBastao = false;
-
-        GameObject bastaoInstanciado = Instantiate(bastaoVoadorPrefab, mao.position, Quaternion.identity);
-
-        Animator anim = bastaoInstanciado.GetComponent<Animator>();
-        if (anim != null) anim.SetBool("voando", true);
-
-        Rigidbody2D rbBastao = bastaoInstanciado.GetComponent<Rigidbody2D>();
-        if (rbBastao != null)
-        {
-            rbBastao.isKinematic = false;
-            rbBastao.simulated = true;
-            float direcao = sprite.flipX ? -1f : 1f;
-            rbBastao.velocity = new Vector2(10f * direcao, 0f);
-        }
-
-        Collider2D colBastao = bastaoInstanciado.GetComponent<Collider2D>();
-        if (colBastao != null)
-        {
-            colBastao.enabled = true;
-            colBastao.isTrigger = true;
-        }
-    }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag(tagDoChao))
@@ -128,7 +93,6 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Inimigo"))
             PerderVida();
     }
-
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag(tagDoChao))
@@ -145,37 +109,13 @@ public class PlayerController : MonoBehaviour
             isGrounded = noChao;
         }
     }
-
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag(tagDoChao))
             isGrounded = false;
     }
-
     private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Bastao"))
-        {
-            if (bastao != null) Destroy(bastao);
-
-            estaSegurandoBastao = true;
-            bastao = other.gameObject;
-
-            bastao.transform.SetParent(mao);
-            bastao.transform.localPosition = Vector3.zero;
-            bastao.transform.localRotation = Quaternion.identity;
-
-            Rigidbody2D rbBastao = bastao.GetComponent<Rigidbody2D>();
-            if (rbBastao != null)
-            {
-                rbBastao.velocity = Vector2.zero;
-                rbBastao.isKinematic = true;
-                rbBastao.simulated = false;
-            }
-
-            Collider2D colBastao = bastao.GetComponent<Collider2D>();
-            if (colBastao != null) colBastao.enabled = false;
-        }
+    { 
 
         if (other.CompareTag("Moeda"))
         {
@@ -193,7 +133,6 @@ public class PlayerController : MonoBehaviour
         if (other.CompareTag("Vendedor")) pertoDoVendedor = false;
         if (other.CompareTag("MesaLaboratorio")) pertoDaMesa = false;
     }
-
     void ComprarVida()
     {
         if (moedas > 0 && vidas < 3)
@@ -212,7 +151,6 @@ public class PlayerController : MonoBehaviour
 
         if (vidas <= 0) GameOver();
     }
-
     void GameOver()
     {
         Time.timeScale = 0f;
@@ -237,7 +175,7 @@ public class PlayerController : MonoBehaviour
         Time.timeScale = 1f;
 
         if (musicaDeFundo != null)
-            musicaDeFundo.UnPause(); // ou Play() para reiniciar do começo
+            musicaDeFundo.UnPause(); // ou Play() para reiniciar do come�o
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }

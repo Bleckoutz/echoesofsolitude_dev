@@ -2945,7 +2945,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8330308482947662166, guid: 028fabfb97e3f624fa4b32edc5ffecd0, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8846443365388710819, guid: 028fabfb97e3f624fa4b32edc5ffecd0, type: 3}
@@ -2964,6 +2965,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3006208229235373768, guid: 028fabfb97e3f624fa4b32edc5ffecd0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1797964830}
+    - targetCorrespondingSourceObject: {fileID: 3006208229235373768, guid: 028fabfb97e3f624fa4b32edc5ffecd0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1797964832}
   m_SourcePrefab: {fileID: 100100000, guid: 028fabfb97e3f624fa4b32edc5ffecd0, type: 3}
 --- !u!4 &197514735 stripped
 Transform:
@@ -12405,7 +12409,7 @@ MonoBehaviour:
   - Verde
   - Vermelho
   - Azul
-  player: {fileID: 1797964824}
+  player: {fileID: 0}
 --- !u!1 &1618678183
 GameObject:
   m_ObjectHideFlags: 0
@@ -13437,17 +13441,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1754312597}
   m_CullTransparentMesh: 1
---- !u!114 &1797964824 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8330308482947662166, guid: 028fabfb97e3f624fa4b32edc5ffecd0, type: 3}
-  m_PrefabInstance: {fileID: 197514734}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1436067530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99ef54882d4ffe74bbae8201915b9ec5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!251 &1797964829
 PlatformEffector2D:
   m_ObjectHideFlags: 0
@@ -13479,7 +13472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d27e7df4d3910e409103f8052aaef4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1797964824}
+  player: {fileID: 0}
   isInfected: 0
   infectionDuration: 30
   normalSpeed: 5
@@ -13487,10 +13480,33 @@ MonoBehaviour:
   normalJumpForce: 10
   minJumpForce: 3
   visionMask: {fileID: 1618678184}
-  normalVision: 5
+  normalVision: 50
   minVision: 0
   "escurid\xE3o": {fileID: 232948410}
   luzdomundo: {fileID: 117220050}
+--- !u!114 &1797964832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436067530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22f0f67a435ef2747992466dc3afb857, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  jumpForce: 10
+  rb: {fileID: 0}
+  vidas: 3
+  moedas: 0
+  tagDoChao: chao
+  barraDeVidaUI: {fileID: 1015536535}
+  contadorMoedasUI: {fileID: 671377099}
+  gameOverPanel: {fileID: 1136501198}
+  musicaDeFundo: {fileID: 0}
+  painelLaboratorio: {fileID: 2132870743}
 --- !u!1 &1818455033
 GameObject:
   m_ObjectHideFlags: 0

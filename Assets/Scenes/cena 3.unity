@@ -8830,7 +8830,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1372104715}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
         m_MethodName: ReiniciarJogo
         m_Mode: 1
@@ -13443,17 +13443,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoMoedas: {fileID: 1356079811}
---- !u!114 &1372104715 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8330308482947662166, guid: 028fabfb97e3f624fa4b32edc5ffecd0, type: 3}
-  m_PrefabInstance: {fileID: 13779140}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99ef54882d4ffe74bbae8201915b9ec5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1388791504
 GameObject:
   m_ObjectHideFlags: 0

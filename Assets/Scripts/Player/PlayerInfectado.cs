@@ -2,7 +2,7 @@
 
 public class PlayerInfection : MonoBehaviour
 {
-    public PlayerController player; // referência ao script principal
+    public PlayerControlle2 player; // referência ao script principal
     public bool isInfected = false;
 
     [Header("Configuração de Infecção")]
@@ -28,7 +28,7 @@ public class PlayerInfection : MonoBehaviour
     void Start()
     {
         if (player == null)
-            player = GetComponent<PlayerController>();
+            player = GetComponent<PlayerControlle2>();
         if (escuridão!= null) escuridão.SetActive(false);
         if (luzdomundo != null) escuridão.SetActive(true);
 

@@ -23,6 +23,7 @@ public class PlayerInfection : MonoBehaviour
     public float minVision = 0.3f;
     public GameObject escuridão;
     public GameObject luzdomundo;
+    public GameObject pontodeluz;
 
 
     void Start()
@@ -31,6 +32,7 @@ public class PlayerInfection : MonoBehaviour
             player = GetComponent<PlayerControlle2>();
         if (escuridão!= null) escuridão.SetActive(false);
         if (luzdomundo != null) escuridão.SetActive(true);
+        if (pontodeluz != null) pontodeluz.SetActive(false);
 
         // Valores iniciais do Player
         normalSpeed = player.moveSpeed;
@@ -74,6 +76,7 @@ public class PlayerInfection : MonoBehaviour
     {
         if (escuridão != null) escuridão.SetActive(true);
         if (luzdomundo != null) luzdomundo.SetActive(false);
+        if (pontodeluz != null) pontodeluz.SetActive(true);
         isInfected = true;
         infectionTimer = 0f;
         Debug.Log("⚠️ Player foi infectado!");

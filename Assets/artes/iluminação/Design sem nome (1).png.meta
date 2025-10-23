@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 296a429adead8d04a99246e8cc6d3313
+guid: dbe49df9e0a967a44958f425cc0fc77b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Copilot_20251022_175814 1_0
+      name: Design sem nome (1)_0
       rect:
         serializedVersion: 2
-        x: 61
-        y: 57
-        width: 867
-        height: 1290
+        x: 155
+        y: 78
+        width: 122
+        height: 355
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,8 +150,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c93577b1c3aaaef4dbc11c888bbc7350
-      internalID: -930263439
+      spriteID: 4e1bd63c6aff2054584e1ca7760c07d4
+      internalID: 1853742372
       vertices: []
       indices: 
       edges: []
@@ -167,7 +167,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Copilot_20251022_175814 1_0: -930263439
+      Design sem nome (1)_0: 1853742372
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 296a429adead8d04a99246e8cc6d3313
+guid: 57c322593c5277d4ba3d855913e86be3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Copilot_20251022_175814 1_0
+      name: ChatGPT Image 23 de out. de 2025, 15_07_55_0
       rect:
         serializedVersion: 2
-        x: 61
-        y: 57
-        width: 867
-        height: 1290
+        x: 139
+        y: 92
+        width: 694
+        height: 1291
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,8 +150,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c93577b1c3aaaef4dbc11c888bbc7350
-      internalID: -930263439
+      spriteID: 5210326630f3f5247810d6d613879cf8
+      internalID: 1168941800
       vertices: []
       indices: 
       edges: []
@@ -167,7 +167,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Copilot_20251022_175814 1_0: -930263439
+      ChatGPT Image 23 de out. de 2025, 15_07_55_0: 1168941800
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

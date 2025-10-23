@@ -28,6 +28,9 @@ public class PlayerMovement : MonoBehaviour
 
         if (animator != null)
             animator.SetBool("IsRunning", moveX != 0);
+        //faz a transição do pulo quando não estiver no chão
+        if (animator != null)
+            animator.SetBool("IsJumping", !isGrounded);
     }
 
     private void FixedUpdate()

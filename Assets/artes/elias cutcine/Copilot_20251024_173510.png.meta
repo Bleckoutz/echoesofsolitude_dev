@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f9c676f57c2b92f45aa94b7b355d6b77
+guid: 2e3f4c2f59e076141be879f4ae27807a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: medico james_0
+      name: Copilot_20251024_173510_1
       rect:
         serializedVersion: 2
-        x: 80
-        y: 25
-        width: 165
-        height: 285
+        x: 785
+        y: 106
+        width: 344
+        height: 726
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d72db5d953f9ab14c8c276b8c4f14282
-      internalID: 322574844
+      spriteID: 87b29b1a7500a854787cba5aea0681ad
+      internalID: -758608230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: medico james_1
+      name: Copilot_20251024_173510_0
       rect:
         serializedVersion: 2
-        x: 400
-        y: 20
-        width: 165
-        height: 290
+        x: 436
+        y: 106
+        width: 344
+        height: 726
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c22f19355dcfba44aae61e2d6c79d0e
-      internalID: 775273927
+      spriteID: 25b937e9905cbcd428d9a08d5e073c40
+      internalID: -1821152924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: medico james_2
+      name: Copilot_20251024_173510_2
       rect:
         serializedVersion: 2
-        x: 720
-        y: 20
-        width: 165
-        height: 290
+        x: 87
+        y: 108
+        width: 344
+        height: 726
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,8 +192,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7207e330399d2c3459cf93df363b9078
-      internalID: -1424418982
+      spriteID: 525898033b819b9458fa367705d0fa41
+      internalID: 1028167091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copilot_20251024_173510_3
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 107
+        width: 344
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be7f780e61f031141a0146d7adae69f9
+      internalID: -1620408338
       vertices: []
       indices: 
       edges: []
@@ -209,9 +230,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      medico james_0: 322574844
-      medico james_1: 775273927
-      medico james_2: -1424418982
+      Copilot_20251024_173510_0: -1821152924
+      Copilot_20251024_173510_1: -758608230
+      Copilot_20251024_173510_2: 1028167091
+      Copilot_20251024_173510_3: -1620408338
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

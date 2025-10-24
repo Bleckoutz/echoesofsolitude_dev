@@ -1,6 +1,6 @@
-﻿using UnityEngine;
+using UnityEngine;
 
-public class InimigoAI : MonoBehaviour
+public class ratoInimigo : MonoBehaviour
 {
     [Header("Movimento")]
     public float moveSpeed = 3f;
@@ -28,9 +28,6 @@ public class InimigoAI : MonoBehaviour
     private void Update()
     {
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
-
-        // Ativa o modo perseguição se o player estiver perto
-        isFollowingPlayer = distanceToPlayer <= detectionRange;
 
         if (isFollowingPlayer)
         {
@@ -84,4 +81,3 @@ public class InimigoAI : MonoBehaviour
         Destroy(gameObject);
     }
 }
-

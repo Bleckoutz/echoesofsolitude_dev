@@ -43,4 +43,13 @@ public class PlayerLife : MonoBehaviour
             musicaDeFundo.UnPause();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+    public void PerderVida(int quantidade = 1)
+    {
+        vidas -= quantidade;
+        barraDeVidaUI?.AtualizarVida(vidas);
+
+        if (vidas <= 0)
+            GameOver();
+    }
+
 }

@@ -4636,6 +4636,8 @@ MonoBehaviour:
     a cura da infec\xE7\xE3o e traga esperan\xE7a.\r\nMas lembre-se: s\xF3 pode carregar
     um bast\xE3o por vez.\r\nQuando tiver um, aperte Q para lan\xE7\xE1-lo contra
     os inimigos \u2014 e faz\xEA-los desaparecer."
+  - "Voc\xEA encontrar\xE1 tamb\xE9m um senhor que ir\xE1 te vender r\xE9medios que
+    ajudam a recuperar a sua vida, aperte E para comprar"
   typingSpeed: 0.03
 --- !u!4 &322468253
 Transform:
@@ -8491,7 +8493,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &765500870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15089,7 +15091,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -235, y: 86}
+  m_AnchoredPosition: {x: -235, y: 200}
   m_SizeDelta: {x: 200, y: 51.1301}
   m_Pivot: {x: 0.4999999, y: 0.6055728}
 --- !u!1 &1254253383

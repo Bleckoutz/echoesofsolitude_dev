@@ -1220,6 +1220,7 @@ GameObject:
   - component: {fileID: 70646057}
   - component: {fileID: 70646058}
   - component: {fileID: 70646059}
+  - component: {fileID: 70646060}
   m_Layer: 0
   m_Name: rato pixel art export1-Sheet_0
   m_TagString: Rato
@@ -1449,6 +1450,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4, y: 0.44}
   m_EdgeRadius: 0
+--- !u!114 &70646060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70646052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132012a2832a3934fba1e1399f3bcbf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  vida: 20
 --- !u!1 &73156120
 GameObject:
   m_ObjectHideFlags: 0
@@ -17848,6 +17863,8 @@ MonoBehaviour:
   lightInfectado: {fileID: 232948411}
   playerVisionLight: {fileID: 1618678185}
   tempoParaMorrer: 6
+  gameOverPanel: {fileID: 1786642197}
+  musicaDeFundo: {fileID: 1765708252}
 --- !u!1 &2009698918
 GameObject:
   m_ObjectHideFlags: 0

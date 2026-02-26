@@ -17,6 +17,8 @@ public class InimigoAI : MonoBehaviour
     public float vida = 20f;
 
     private SpriteRenderer spriteRenderer;
+   
+
 
     private void Start()
     {
@@ -27,7 +29,7 @@ public class InimigoAI : MonoBehaviour
 
     private void Update()
     {
-        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
         // Ativa o modo perseguição se o player estiver perto
         isFollowingPlayer = distanceToPlayer <= detectionRange;
@@ -62,6 +64,7 @@ public class InimigoAI : MonoBehaviour
     {
         transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
     }
+    
 
     private void FlipSprite(float targetX)
     {
@@ -72,7 +75,8 @@ public class InimigoAI : MonoBehaviour
     public void LevarDano(float dano)
     {
         vida -= dano;
-        Debug.Log("Inimigo levou dano! Vida restante: " + vida);
+       
+            Debug.Log("Inimigo levou dano! Vida restante: " + vida);
 
         if (vida <= 0)
             Morrer();

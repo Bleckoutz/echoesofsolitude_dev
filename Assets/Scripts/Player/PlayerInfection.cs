@@ -18,6 +18,10 @@ public class PlayerInfection : MonoBehaviour
     private bool infectado = false;
     private float raioInicial;
 
+    [Header("Game Over")]
+    public GameObject gameOverPanel;
+    public AudioSource musicaDeFundo;
+
 
     private void Start()
     {
@@ -67,9 +71,18 @@ public class PlayerInfection : MonoBehaviour
         Debug.Log("INFECTADO! Visão reduzindo...");
     }
 
+    void GameOver()
+    {
+        
+        if (musicaDeFundo != null && musicaDeFundo.isPlaying)
+            musicaDeFundo.Pause();
+        if (gameOverPanel != null)
+            gameOverPanel.SetActive(true);
+    }
+
     void Morrer()
     {
         Debug.Log("Player morreu pela infecção!");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        GameOver(); 
     }
 }

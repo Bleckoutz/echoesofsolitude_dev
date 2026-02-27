@@ -17,7 +17,7 @@ public class PlayerInfection : MonoBehaviour
     private float tempoAtual;
     private bool infectado = false;
     private float raioInicial;
-
+    
     [Header("Game Over")]
     public GameObject gameOverPanel;
     public AudioSource musicaDeFundo;
@@ -62,6 +62,24 @@ public class PlayerInfection : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (!infectado && other.CompareTag("cura"))
+        {
+            
+            Curar();
+        }
+    }
+
+    public void Curar()
+    {
+        infectado = false;
+        lightSaudavel.enabled = true;
+        lightInfectado.enabled = false;
+        playerVisionLight.pointLightOuterRadius = raioInicial; // Restaura o raio da luz
+        Debug.Log("Curado! Visão restaurada.");
+    }
+
     void Infectar()
     {
         infectado = true;
@@ -70,6 +88,8 @@ public class PlayerInfection : MonoBehaviour
 
         Debug.Log("INFECTADO! Visão reduzindo...");
     }
+
+ 
 
     void GameOver()
     {

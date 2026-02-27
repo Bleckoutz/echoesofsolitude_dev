@@ -9,6 +9,7 @@ TagManager:
   - TextoContador
   - MesaLaboratorio
   - Rato
+  - cura
   layers:
   - Default
   - TransparentFX

@@ -9,6 +9,10 @@ public class PlayerAttack : MonoBehaviour
     private bool estaSegurandoBastao = false;
     private PlayerMovement movimento;
 
+
+    [Header("configuração de cura)")]
+    public float tempoEntreCuras = 5f;
+    public float quantidadeCura = 1f;
     private void Start()
     {
         movimento = GetComponent<PlayerMovement>();

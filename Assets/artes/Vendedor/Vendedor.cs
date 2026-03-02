@@ -1,9 +1,17 @@
+using TMPro;
 using UnityEngine;
 
 public class Vendedor : MonoBehaviour
 {
     public int precoPorVida = 1;
     public int vidaMaxima = 3;
+    public TextMeshProUGUI TextPLayer;
+
+    void Start()
+    {
+        TextPLayer.text = $"Press E to buy life ({precoPorVida} coins)";
+        TextPLayer.gameObject.SetActive(false);
+    }
 
     private void OnTriggerStay2D(Collider2D other)
     {
@@ -13,6 +21,15 @@ public class Vendedor : MonoBehaviour
         {
             Debug.Log("Tentando comprar vida...");
             TentarVenderVida(player);
+        }
+        if (player != null)
+        {
+            TextPLayer.gameObject.SetActive(true);
+        }
+
+       if (player == null)
+        {
+            TextPLayer.gameObject.SetActive(false);
         }
     }
 

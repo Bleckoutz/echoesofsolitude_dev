@@ -1770,7 +1770,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.298
-  m_Color: {r: 0.3529412, g: 0.3529412, b: 0.3529412, a: 1}
+  m_Color: {r: 0.2509804, g: 0.2509804, b: 0.2509804, a: 1}
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
@@ -2049,7 +2049,7 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3529412, g: 0.34901962, b: 0.3529412, a: 1}
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
@@ -2629,10 +2629,11 @@ GameObject:
   - component: {fileID: 174538549}
   - component: {fileID: 174538548}
   - component: {fileID: 174538547}
+  - component: {fileID: 174538551}
   - component: {fileID: 174538546}
   m_Layer: 0
   m_Name: rato pixel art export1-Sheet_0 (4)
-  m_TagString: Inimigo
+  m_TagString: Rato
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2814,6 +2815,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &174538551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174538544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132012a2832a3934fba1e1399f3bcbf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 0
+  vida: 20
 --- !u!1 &178499228
 GameObject:
   m_ObjectHideFlags: 0
@@ -2825,6 +2840,7 @@ GameObject:
   - component: {fileID: 178499229}
   - component: {fileID: 178499234}
   - component: {fileID: 178499233}
+  - component: {fileID: 178499235}
   - component: {fileID: 178499232}
   - component: {fileID: 178499231}
   - component: {fileID: 178499230}
@@ -3012,6 +3028,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &178499235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178499228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132012a2832a3934fba1e1399f3bcbf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 0
+  vida: 20
 --- !u!1 &213204024
 GameObject:
   m_ObjectHideFlags: 0
@@ -3170,6 +3200,7 @@ GameObject:
   - component: {fileID: 221857251}
   - component: {fileID: 221857253}
   - component: {fileID: 221857254}
+  - component: {fileID: 221857255}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: cura
@@ -3238,8 +3269,8 @@ Transform:
   m_GameObject: {fileID: 221857250}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.3, y: -2.93, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 6.89, y: -3.39, z: 0}
+  m_LocalScale: {x: 0.16182598, y: 0.09968818, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3291,6 +3322,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c46d6d6dfb6f614cb78bcba5b799e89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &221857255
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221857250}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f15d03aab43c15e449d9ab89b5479ffb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &232948410
 GameObject:
   m_ObjectHideFlags: 0
@@ -4060,6 +4112,7 @@ GameObject:
   - component: {fileID: 361386698}
   - component: {fileID: 361386703}
   - component: {fileID: 361386702}
+  - component: {fileID: 361386704}
   - component: {fileID: 361386701}
   - component: {fileID: 361386700}
   - component: {fileID: 361386699}
@@ -4247,6 +4300,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &361386704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361386697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132012a2832a3934fba1e1399f3bcbf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 0
+  vida: 20
 --- !u!1 &401900906
 GameObject:
   m_ObjectHideFlags: 0
@@ -5680,7 +5747,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2224c524aac06e842b1824e46fcb6c81, type: 2}
+  - {fileID: 2100000, guid: 205f8183f15403044a01933dc3e9e18a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6202,6 +6269,7 @@ GameObject:
   - component: {fileID: 612157736}
   - component: {fileID: 612157741}
   - component: {fileID: 612157740}
+  - component: {fileID: 612157742}
   - component: {fileID: 612157739}
   - component: {fileID: 612157738}
   - component: {fileID: 612157737}
@@ -6389,6 +6457,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &612157742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612157735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132012a2832a3934fba1e1399f3bcbf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 0
+  vida: 20
 --- !u!1 &633229211
 GameObject:
   m_ObjectHideFlags: 0
@@ -6400,6 +6482,7 @@ GameObject:
   - component: {fileID: 633229212}
   - component: {fileID: 633229217}
   - component: {fileID: 633229216}
+  - component: {fileID: 633229218}
   - component: {fileID: 633229215}
   - component: {fileID: 633229214}
   - component: {fileID: 633229213}
@@ -6587,6 +6670,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &633229218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633229211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132012a2832a3934fba1e1399f3bcbf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 0
+  vida: 20
 --- !u!1 &684158498
 GameObject:
   m_ObjectHideFlags: 0
@@ -7927,6 +8024,7 @@ GameObject:
   - component: {fileID: 808366496}
   - component: {fileID: 808366495}
   - component: {fileID: 808366494}
+  - component: {fileID: 808366498}
   - component: {fileID: 808366493}
   m_Layer: 0
   m_Name: rato pixel art export1-Sheet_0 (2)
@@ -8112,6 +8210,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &808366498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808366491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132012a2832a3934fba1e1399f3bcbf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 0
+  vida: 20
 --- !u!1 &824492133
 GameObject:
   m_ObjectHideFlags: 0
@@ -8728,6 +8840,7 @@ GameObject:
   - component: {fileID: 977411695}
   - component: {fileID: 977411700}
   - component: {fileID: 977411699}
+  - component: {fileID: 977411701}
   - component: {fileID: 977411698}
   - component: {fileID: 977411697}
   - component: {fileID: 977411696}
@@ -8915,6 +9028,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &977411701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977411694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132012a2832a3934fba1e1399f3bcbf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 0
+  vida: 20
 --- !u!1 &984322785
 GameObject:
   m_ObjectHideFlags: 0
@@ -15069,6 +15196,7 @@ GameObject:
   - component: {fileID: 1695726825}
   - component: {fileID: 1695726824}
   - component: {fileID: 1695726823}
+  - component: {fileID: 1695726827}
   - component: {fileID: 1695726822}
   m_Layer: 0
   m_Name: rato pixel art export1-Sheet_0 (3)
@@ -15254,6 +15382,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1695726827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695726820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132012a2832a3934fba1e1399f3bcbf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 0
+  vida: 20
 --- !u!1 &1718740730
 GameObject:
   m_ObjectHideFlags: 0
@@ -15418,6 +15560,7 @@ GameObject:
   - component: {fileID: 1721059472}
   - component: {fileID: 1721059471}
   - component: {fileID: 1721059470}
+  - component: {fileID: 1721059475}
   m_Layer: 0
   m_Name: rato pixel art export1-Sheet_0 (1)
   m_TagString: Inimigo
@@ -15602,6 +15745,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1721059475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721059468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132012a2832a3934fba1e1399f3bcbf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 0
+  vida: 20
 --- !u!1 &1735688476
 GameObject:
   m_ObjectHideFlags: 0
@@ -18989,6 +19146,7 @@ GameObject:
   - component: {fileID: 2115892396}
   - component: {fileID: 2115892401}
   - component: {fileID: 2115892400}
+  - component: {fileID: 2115892402}
   - component: {fileID: 2115892399}
   - component: {fileID: 2115892398}
   - component: {fileID: 2115892397}
@@ -19176,6 +19334,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2115892402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115892395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132012a2832a3934fba1e1399f3bcbf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 0
+  vida: 20
 --- !u!1 &2119482398
 GameObject:
   m_ObjectHideFlags: 0
@@ -19187,6 +19359,7 @@ GameObject:
   - component: {fileID: 2119482399}
   - component: {fileID: 2119482404}
   - component: {fileID: 2119482403}
+  - component: {fileID: 2119482405}
   - component: {fileID: 2119482402}
   - component: {fileID: 2119482401}
   - component: {fileID: 2119482400}
@@ -19374,6 +19547,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2119482405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119482398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132012a2832a3934fba1e1399f3bcbf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 0
+  vida: 20
 --- !u!1 &2126125793
 GameObject:
   m_ObjectHideFlags: 0

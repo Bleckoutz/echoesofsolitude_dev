@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using UnityEngine.UIElements;
 
 public class SimpleCutscene : MonoBehaviour
 {
@@ -11,11 +12,13 @@ public class SimpleCutscene : MonoBehaviour
     public float typingSpeed = 0.03f;
 
     private int index = 0;
+    public TextMeshProUGUI Textpule; // opcional para mostrar que F pula
 
     void Start()
     {
         cutscenePanel.SetActive(true);
         dialogueText.text = "";
+        Textpule.text = "Press F to skip"; // opcional
 
         // pausa o tempo do jogo
         Time.timeScale = 0f;
@@ -28,16 +31,18 @@ public class SimpleCutscene : MonoBehaviour
         while (index < sentences.Length)
         {
             yield return StartCoroutine(TypeSentence(sentences[index]));
+            yield return new WaitForSecondsRealtime(0.5f); // pequena pausa após a frase ser digitada
 
             // espera input do jogador
             yield return new WaitUntil(() =>
-                Input.GetKeyDown(KeyCode.Space) ||
-                Input.GetKeyDown(KeyCode.Return) ||
+                Input.GetKeyDown(KeyCode.Mouse0) ||
+                Input.GetKeyDown(KeyCode.A) ||
                 Input.GetMouseButtonDown(0)
             );
 
             index++;
             dialogueText.text = ""; // limpa a linha antiga
+            Textpule.text = "Press F to skip"; // opcional
         }
 
         // termina cutscene
@@ -52,6 +57,17 @@ public class SimpleCutscene : MonoBehaviour
         {
             dialogueText.text += letter;
             yield return new WaitForSecondsRealtime(typingSpeed); // <- importante para Time.timeScale = 0
+        }
+    }
+
+    void Update()
+    {
+        // opcional: permitir pular cutscene
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            StopAllCoroutines();
+            cutscenePanel.SetActive(false);
+            Time.timeScale = 1f;
         }
     }
 }

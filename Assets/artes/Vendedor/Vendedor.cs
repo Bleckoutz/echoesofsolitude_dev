@@ -26,6 +26,7 @@ public class Vendedor : MonoBehaviour
         {
             TextPLayer.gameObject.SetActive(true);
         }
+
        if (player == null)
         {
             TextPLayer.gameObject.SetActive(false);

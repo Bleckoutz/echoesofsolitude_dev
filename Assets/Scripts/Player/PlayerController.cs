@@ -30,8 +30,22 @@ public class PlayerController : MonoBehaviour
             interacao.contadorMoedasUI?.AtualizarMoedas(value);
         }
     }
+    public int itens
+    {
+        get
+        {
+            if (interacao == null || interacao.contadorItens == null) return 0;
+            return interacao.contadorItens.totalItens;
+        }
+        set
+        {
+            if (interacao == null || interacao.contadorItens == null) return;
+            interacao.contadorItens.totalItens = value;
+            interacao.contadorItens.textoContador.text = "Itens: " + value;
+        }
+    }
 
-    // ❤️ Expor vidas (vem do PlayerLife)
+    //  Expor vidas (vem do PlayerLife)
     public int vidas
     {
         get
@@ -48,7 +62,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // 📟 Expor contador de moedas UI (tipo do seu projeto)
+    //  Expor contador de moedas UI (tipo do seu projeto)
     public ContadorMoedas contadorMoedasUI
     {
         get => interacao != null ? interacao.contadorMoedasUI : null;
@@ -57,8 +71,16 @@ public class PlayerController : MonoBehaviour
             if (interacao != null) interacao.contadorMoedasUI = value;
         }
     }
+    public ItemColetavel contadorItensUI
+    {
+        get => interacao != null && interacao.contadorItens != null ? interacao.contadorItens : null;
+        set
+        {
+            if (interacao != null && interacao.contadorItens != null) interacao.contadorItens = value;
+        }
+    }
 
-    // 💉 Expor a barra de vida do tipo correto (BarraDeVidaCoracoes)
+    //  Expor a barra de vida do tipo correto (BarraDeVidaCoracoes)
     public BarraDeVidaCoracoes barraDeVidaUI
     {
         get => vida != null ? vida.barraDeVidaUI : null;
@@ -68,7 +90,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // 💥 Função para perder vida (chama o método no PlayerLife)
+    //  Função para perder vida (chama o método no PlayerLife)
     public void PerderVida()
     {
         if (vida != null)

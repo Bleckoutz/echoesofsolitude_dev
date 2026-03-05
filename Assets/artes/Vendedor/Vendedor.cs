@@ -9,8 +9,17 @@ public class Vendedor : MonoBehaviour
 
     void Start()
     {
-        TextPLayer.text = $"Press E to buy life ({precoPorVida} coins)";
+        TextPLayer.text = $"pressione E para comprar vida ({precoPorVida} moeda)";
         TextPLayer.gameObject.SetActive(false);
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        PlayerController player = other.GetComponentInParent<PlayerController>();
+        if (player != null)
+        {
+            TextPLayer.gameObject.SetActive(false);
+        }
     }
 
     private void OnTriggerStay2D(Collider2D other)

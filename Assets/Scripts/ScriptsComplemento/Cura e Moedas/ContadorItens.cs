@@ -7,7 +7,7 @@ public class ItemColetavel : MonoBehaviour
 {
     // Texto do contador
     public TextMeshProUGUI textoContador;
-    private static int totalItens = 0;
+    public int totalItens = 0;
 
     void Start()
     {

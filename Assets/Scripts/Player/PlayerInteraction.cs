@@ -6,6 +6,7 @@ public class PlayerInteraction : MonoBehaviour
     public ContadorMoedas contadorMoedasUI;
     public PlayerLife playerLife;
     public GameObject painelLaboratorio;
+    public ItemColetavel contadorItens;
 
     private bool pertoDoVendedor = false;
     private bool pertoDaMesa = false;

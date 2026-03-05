@@ -14615,7 +14615,8 @@ MonoBehaviour:
   - Verde
   - Vermelho
   - Azul
-  player: {fileID: 0}
+  player: {fileID: 1998308442}
+  playerInfection: {fileID: 1998308450}
 --- !u!1 &1618678183
 GameObject:
   m_ObjectHideFlags: 0
@@ -18062,6 +18063,7 @@ MonoBehaviour:
   contadorMoedasUI: {fileID: 2009698920}
   playerLife: {fileID: 1998308441}
   painelLaboratorio: {fileID: 2132870743}
+  contadorItens: {fileID: 0}
 --- !u!114 &1998308440
 MonoBehaviour:
   m_ObjectHideFlags: 0

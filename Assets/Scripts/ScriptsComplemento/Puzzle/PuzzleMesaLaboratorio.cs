@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,8 +18,9 @@ public class PuzzleMesaLaboratorio : MonoBehaviour
     private bool puzzleAtivo = false;
     private bool jogadorPerto = false;
 
+    [Header("Referências")]
     public PlayerController player; // Referência ao player para chamar PerderVida()
-
+    public PlayerInfection playerInfection; // Referência ao PlayerInfection para chamar Curar()
     void Start()
     {
         painelPuzzle.SetActive(false);
@@ -98,5 +100,8 @@ public class PuzzleMesaLaboratorio : MonoBehaviour
         puzzleAtivo = false;
         indiceAtual = 0;
         Debug.Log("Puzzle fechado.");
+        Destroy (gameObject); // Destrói a mesa de laboratório para não permitir reabertura
+        playerInfection.Curar(); // chama o método de cura do jogador
+   
     }
 }
